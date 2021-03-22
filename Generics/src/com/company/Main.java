@@ -1,8 +1,15 @@
 package com.company;
 
+import java.util.Arrays;
+
 public class Main {
 
     public static void main(final String[] args) {
+
+        int[] arr = new int[4];
+
+        Arrays.stream(arr).min();
+
         Apple apple = new Apple();
         apple.setFresh(false);
         Fruit fruit = new Fruit();
