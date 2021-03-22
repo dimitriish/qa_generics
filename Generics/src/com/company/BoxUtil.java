@@ -12,7 +12,7 @@ public class BoxUtil {
     }
 
 
-    public static <T extends Apple> void copyFreshFruitFromBoxToBox(final Box<T> src, final Box<? super T> dest) {
+    public static <T extends Fruit> void copyFreshFruitFromBoxToBox(final Box<T> src, final Box<? super T> dest) {
         if (src.get() != null) {
             if (src.get().isFresh()) {
                 dest.put(src.get());
